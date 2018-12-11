@@ -4,35 +4,32 @@
 // Copyright: none
 // Description: 
 // Date              Version     Change ID          Author             Comment
-// 12/6/18             1.0            			Favian Ramirez       Initial Creation
-// 12/6/18             1.1              		Favian Ramirez    	 Created Different Classes
-// 12/6/18			   1.2						Favian Ramriez		  
-// 12/6/18			   1.3                  	Favian Ramirez        
-// 12/6/18             1.4                		Favian Ramirez        
-// 12/6/18             1.5               		Favian Ramirez    	  
-// 12/6/18			   1.6						Favian Ramirez		  
-// 12/6/18			   1.7						Favian Ramirez		  
+// 12/6/18             1.0            		Favian Ramirez       Initial Creation
+// 12/6/18             1.1              	Favian Ramirez       Created Different Classes
+// 12/6/18             1.2			Favian Ramriez		  
+// 12/6/18             1.3                  	Favian Ramirez        
+// 12/6/18             1.4            		Favian Ramirez        
+// 12/6/18             1.5              	Favian Ramirez    	  
+// 12/6/18	       1.6			Favian Ramirez		  
+// 12/6/18	       1.7			Favian Ramirez	  
 // 12/6/18             1.8                  	Favian Ramirez        
 // 12/6/18             1.9                  	Favian Ramirez    	  
-// 12/6/18			   1.10						Favian Ramirez		  
-// 12/6/18			   1.11						Favian Ramirez		  
-// 12/6/18			   1.12						Favian Ramirez		  
-// 12/6/18			   1.13						Favian Ramirez		  
-// 12/6/18			   1.14						Favian Ramirez		  
-// 12/6/18			   1.15						Favian Ramirez		  
-// 12/6/18			   1.16						Favian Ramirez		  
-// 12/6/18			   1.17						Favian Ramirez		 
-// 12/6/18			   1.18						Favian Ramirez		  
+// 12/6/18             1.10			Favian Ramirez		  
+// 12/6/18	       1.11			Favian Ramirez		  
+// 12/6/18	       1.12			Favian Ramirez		  
+// 12/6/18	       1.13			Favian Ramirez		  
+// 12/6/18	       1.14			Favian Ramirez		  
+// 12/6/18	       1.15			Favian Ramirez		  
+// 12/6/18	       1.16			Favian Ramirez		  
+// 12/6/18	       1.17			Favian Ramirez		 
+// 12/6/18	       1.18			Favian Ramirez		  
 //======================================================================================================
 import java.util.*;
 import javax.swing.*;
 public class FruitSortingProgram {
 	public static void main(String[] args) {
-
-		System.out.println("Here is your array of fruit");
-		
+		System.out.println("Here is your array of fruit");		
 	}
-
 }
 class OnlineSuperMarket {	
 	private static Fruit[] fruitOrder;
@@ -77,13 +74,11 @@ class OnlineSuperMarket {
 			fruitOrder[i].setPrice(price);
 			weight = STOCK_WEIGHT_LOW + generator.nextDouble() * (STOCK_WEIGHT_HIGH - STOCK_WEIGHT_LOW);
 			fruitOrder[i].setWeight(weight);
-		
 		}
 	}
 	public static boolean sort(Fruit[] fruitOrder) {
 		String temp = null;
-		boolean changed = false;
-		 
+		boolean changed = false;	 
 	      for (int i = 0; i < ARRAY_SIZE; i++)
 	         if (fruidOrder[i].compareToIgnoreCase(fruitOrder[i + 1]) > 0){
 	            temp = fruitOrder[i];
@@ -97,15 +92,11 @@ class OnlineSuperMarket {
 		System.out.printf("%8s%n", marketName);
 		System.out.printf("%8sn", webAddress);
 		System.out.printf("%8%n", "Fruit Ordering");
-		System.out.println("Enter a fruit name or XXX to end: ");
-		
-		
+		System.out.println("Enter a fruit name or XXX to end: ");	
 	}
-	public static void quit() {
-		
+	public static void quit() {	
 	}
 }
-	
 class Fruit{
 	private String fruitName;
 	private double weight;
@@ -141,5 +132,4 @@ class Fruit{
 	public void order() {
 		
 	}
-
 }
